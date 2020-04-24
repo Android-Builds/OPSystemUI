@@ -1,0 +1,43 @@
+package com.oneplus.commonctrl;
+
+public final class R$layout {
+    public static final int design_bottom_navigation_item = 2131558481;
+    public static final int op_abc_action_menu_item_layout = 2131558671;
+    public static final int op_abc_action_menu_layout = 2131558672;
+    public static final int op_abc_action_mode_close_item_material = 2131558674;
+    public static final int op_abc_list_menu_item_checkbox = 2131558677;
+    public static final int op_abc_list_menu_item_icon = 2131558678;
+    public static final int op_abc_list_menu_item_radio = 2131558680;
+    public static final int op_abc_popup_menu_header_item_layout = 2131558681;
+    public static final int op_abc_popup_menu_item_layout = 2131558682;
+    public static final int op_abc_tooltip = 2131558687;
+    public static final int op_alert_dialog_material = 2131558689;
+    public static final int op_animation_grid_list_item = 2131558696;
+    public static final int op_control_empty_view = 2131558699;
+    public static final int op_control_tooltip_view = 2131558700;
+    public static final int op_ctrl_preference_blank = 2131558701;
+    public static final int op_ctrl_preference_divider = 2131558702;
+    public static final int op_date_picker_legacy = 2131558705;
+    public static final int op_date_picker_material = 2131558707;
+    public static final int op_date_picker_month_item_material = 2131558708;
+    public static final int op_day_picker_content_material = 2131558710;
+    public static final int op_design_text_input_password_icon = 2131558713;
+    public static final int op_float_switch_button = 2131558718;
+    public static final int op_number_picker = 2131558725;
+    public static final int op_persistent_search_view = 2131558728;
+    public static final int op_preference = 2131558729;
+    public static final int op_preference_list_fragment = 2131558739;
+    public static final int op_search_dropdown_item_icons_2line = 2131558749;
+    public static final int op_search_view = 2131558750;
+    public static final int op_select_dialog_item_material = 2131558751;
+    public static final int op_select_dialog_material = 2131558752;
+    public static final int op_select_dialog_multichoice_material = 2131558753;
+    public static final int op_select_dialog_singlechoice_material = 2131558755;
+    public static final int op_simple_dropdown_hint = 2131558757;
+    public static final int op_time_picker_legacy_material = 2131558769;
+    public static final int op_time_picker_material = 2131558770;
+    public static final int op_year_label_text_view = 2131558778;
+    public static final int preference_widget_seekbar = 2131558808;
+    public static final int time_picker_text_input_material = 2131558901;
+    public static final int web_browser_activity_layout = 2131558917;
+}

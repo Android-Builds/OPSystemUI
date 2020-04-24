@@ -1,0 +1,143 @@
+package com.android.settingslib.bluetooth;
+
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothClass;
+import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothHeadsetClient;
+import android.bluetooth.BluetoothProfile;
+import android.bluetooth.BluetoothProfile.ServiceListener;
+import android.bluetooth.BluetoothUuid;
+import android.content.Context;
+import android.os.ParcelUuid;
+import android.util.Log;
+import com.android.settingslib.R$drawable;
+import java.util.List;
+
+final class HfpClientProfile implements LocalBluetoothProfile {
+    static final ParcelUuid[] SRC_UUIDS = {BluetoothUuid.HSP_AG, BluetoothUuid.Handsfree_AG};
+    /* access modifiers changed from: private */
+    public final CachedBluetoothDeviceManager mDeviceManager;
+    /* access modifiers changed from: private */
+    public boolean mIsProfileReady;
+    private final LocalBluetoothProfileManager mProfileManager;
+    /* access modifiers changed from: private */
+    public BluetoothHeadsetClient mService;
+
+    private final class HfpClientServiceListener implements ServiceListener {
+        private HfpClientServiceListener() {
+        }
+
+        public void onServiceConnected(int i, BluetoothProfile bluetoothProfile) {
+            HfpClientProfile.this.mService = (BluetoothHeadsetClient) bluetoothProfile;
+            List connectedDevices = HfpClientProfile.this.mService.getConnectedDevices();
+            while (!connectedDevices.isEmpty()) {
+                BluetoothDevice bluetoothDevice = (BluetoothDevice) connectedDevices.remove(0);
+                CachedBluetoothDevice findDevice = HfpClientProfile.this.mDeviceManager.findDevice(bluetoothDevice);
+                if (findDevice == null) {
+                    StringBuilder sb = new StringBuilder();
+                    sb.append("HfpClient profile found new device: ");
+                    sb.append(bluetoothDevice);
+                    Log.w("HfpClientProfile", sb.toString());
+                    findDevice = HfpClientProfile.this.mDeviceManager.addDevice(bluetoothDevice);
+                }
+                findDevice.onProfileStateChanged(HfpClientProfile.this, 2);
+                findDevice.refresh();
+            }
+            HfpClientProfile.this.mIsProfileReady = true;
+        }
+
+        public void onServiceDisconnected(int i) {
+            HfpClientProfile.this.mIsProfileReady = false;
+        }
+    }
+
+    public boolean accessProfileEnabled() {
+        return true;
+    }
+
+    public int getProfileId() {
+        return 16;
+    }
+
+    public boolean isAutoConnectable() {
+        return true;
+    }
+
+    public String toString() {
+        return "HEADSET_CLIENT";
+    }
+
+    HfpClientProfile(Context context, CachedBluetoothDeviceManager cachedBluetoothDeviceManager, LocalBluetoothProfileManager localBluetoothProfileManager) {
+        this.mDeviceManager = cachedBluetoothDeviceManager;
+        this.mProfileManager = localBluetoothProfileManager;
+        BluetoothAdapter.getDefaultAdapter().getProfileProxy(context, new HfpClientServiceListener(), 16);
+    }
+
+    public boolean connect(BluetoothDevice bluetoothDevice) {
+        BluetoothHeadsetClient bluetoothHeadsetClient = this.mService;
+        if (bluetoothHeadsetClient == null) {
+            return false;
+        }
+        return bluetoothHeadsetClient.connect(bluetoothDevice);
+    }
+
+    public boolean disconnect(BluetoothDevice bluetoothDevice) {
+        BluetoothHeadsetClient bluetoothHeadsetClient = this.mService;
+        if (bluetoothHeadsetClient == null) {
+            return false;
+        }
+        if (bluetoothHeadsetClient.getPriority(bluetoothDevice) > 100) {
+            this.mService.setPriority(bluetoothDevice, 100);
+        }
+        return this.mService.disconnect(bluetoothDevice);
+    }
+
+    public int getConnectionStatus(BluetoothDevice bluetoothDevice) {
+        BluetoothHeadsetClient bluetoothHeadsetClient = this.mService;
+        if (bluetoothHeadsetClient == null) {
+            return 0;
+        }
+        return bluetoothHeadsetClient.getConnectionState(bluetoothDevice);
+    }
+
+    public boolean isPreferred(BluetoothDevice bluetoothDevice) {
+        BluetoothHeadsetClient bluetoothHeadsetClient = this.mService;
+        boolean z = false;
+        if (bluetoothHeadsetClient == null) {
+            return false;
+        }
+        if (bluetoothHeadsetClient.getPriority(bluetoothDevice) > 0) {
+            z = true;
+        }
+        return z;
+    }
+
+    public void setPreferred(BluetoothDevice bluetoothDevice, boolean z) {
+        BluetoothHeadsetClient bluetoothHeadsetClient = this.mService;
+        if (bluetoothHeadsetClient != null) {
+            if (!z) {
+                bluetoothHeadsetClient.setPriority(bluetoothDevice, 0);
+            } else if (bluetoothHeadsetClient.getPriority(bluetoothDevice) < 100) {
+                this.mService.setPriority(bluetoothDevice, 100);
+            }
+        }
+    }
+
+    public int getDrawableResource(BluetoothClass bluetoothClass) {
+        return R$drawable.ic_bt_headset_hfp;
+    }
+
+    /* access modifiers changed from: protected */
+    public void finalize() {
+        String str = "HfpClientProfile";
+        Log.d(str, "finalize()");
+        if (this.mService != null) {
+            try {
+                BluetoothAdapter.getDefaultAdapter().closeProfileProxy(16, this.mService);
+                this.mService = null;
+            } catch (Throwable th) {
+                Log.w(str, "Error cleaning up HfpClient proxy", th);
+            }
+        }
+    }
+}

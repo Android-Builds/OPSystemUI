@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="@dimen/oneplus_contorl_icon_size_button" android:width="@dimen/oneplus_contorl_icon_size_button" android:alpha="?attr/onePlusActionbarIconAlpha" android:autoMirrored="true" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="?attr/onePlusActionbarIconColor" android:pathData="M4.811,12.75L10.53,18.47L9.47,19.53L2.47,12.53C2.177,12.237 2.177,11.763 2.47,11.47L9.47,4.47L10.53,5.53L4.811,11.25L22,11.25L22,12.75L4.811,12.75Z" android:strokeColor="#00000000" android:strokeWidth="1"/>
+</vector>

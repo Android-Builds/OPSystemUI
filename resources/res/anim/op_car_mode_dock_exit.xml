@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" android:interpolator="@interpolator/oneplus_control_fast_out_slow_in">
+    <translate android:duration="300" android:fillAfter="true" android:startOffset="100" android:fromYDelta="0%" android:toYDelta="100%"/>
+</set>

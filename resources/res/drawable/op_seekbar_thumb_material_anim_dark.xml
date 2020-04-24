@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_enabled="false">
+        <shape android:tint="@color/seekbar_normal_color_dark" android:shape="ring" android:useLevel="false" android:innerRadius="2dp" android:thickness="2dp">
+            <solid android:color="#ff000000"/>
+            <size android:height="18dp" android:width="18dp"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true" android:id="@+id/pressed" android:drawable="@drawable/op_seekbar_thumb_pressed_to_unpressed_dark"/>
+    <item android:id="@+id/unpressed" android:drawable="@drawable/op_seekbar_thumb_unpressed_to_pressed_dark"/>
+</animated-selector>

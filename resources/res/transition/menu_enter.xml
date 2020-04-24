@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui" xmlns:aapt="http://schemas.android.com/aapt" android:transitionOrdering="together">
+    <transition android:duration="@integer/oneplus_contorl_time_part5" class="com.oneplus.lib.menu.EpicenterTranslateClipReveal"/>
+    <fade android:duration="@integer/oneplus_contorl_time_part5" android:fromAlpha="0" android:toAlpha="@dimen/oneplus_contorl_alpha11"/>
+</transitionSet>

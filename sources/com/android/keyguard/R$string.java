@@ -1,0 +1,65 @@
+package com.android.keyguard;
+
+public final class R$string {
+    public static final int airplane_mode = 2131820847;
+    public static final int clock_12hr_format = 2131821049;
+    public static final int clock_24hr_format = 2131821050;
+    public static final int clock_title_analog = 2131821053;
+    public static final int clock_title_bubble = 2131821054;
+    public static final int clock_title_default = 2131821055;
+    public static final int data_connection_5g = 2131821097;
+    public static final int error_disable_esim_msg = 2131821197;
+    public static final int error_disable_esim_title = 2131821198;
+    public static final int keyguard_carrier_name_with_sim_locked_template = 2131821378;
+    public static final int keyguard_fancy_colon = 2131821383;
+    public static final int keyguard_missing_sim_message_short = 2131821397;
+    public static final int keyguard_network_locked_message = 2131821399;
+    public static final int keyguard_permanent_disabled_sim_message_short = 2131821409;
+    public static final int keyguard_sim_error_message_short = 2131821416;
+    public static final int keyguard_sim_locked_message = 2131821417;
+    public static final int keyguard_sim_puk_locked_message = 2131821418;
+    public static final int keyguard_sim_unlock_progress_dialog_message = 2131821419;
+    public static final int kg_enter_confirm_pin_hint = 2131821424;
+    public static final int kg_face_not_recognized = 2131821425;
+    public static final int kg_fingerprint_not_recognized = 2131821433;
+    public static final int kg_first_unlock_instructions = 2131821434;
+    public static final int kg_invalid_confirm_pin_hint = 2131821436;
+    public static final int kg_invalid_sim_pin_hint = 2131821438;
+    public static final int kg_invalid_sim_puk_hint = 2131821439;
+    public static final int kg_password_instructions = 2131821441;
+    public static final int kg_password_pin_failed = 2131821442;
+    public static final int kg_password_puk_failed = 2131821443;
+    public static final int kg_password_wrong_pin_code_pukked = 2131821444;
+    public static final int kg_password_wrong_puk_code_dead = 2131821445;
+    public static final int kg_pin_instructions = 2131821448;
+    public static final int kg_prompt_reason_device_admin = 2131821449;
+    public static final int kg_prompt_reason_restart_password = 2131821450;
+    public static final int kg_prompt_reason_restart_pin = 2131821452;
+    public static final int kg_prompt_reason_timeout_password = 2131821456;
+    public static final int kg_prompt_reason_timeout_pin = 2131821458;
+    public static final int kg_prompt_reason_user_request = 2131821459;
+    public static final int kg_puk_enter_pin_hint = 2131821460;
+    public static final int kg_puk_enter_puk_hint = 2131821461;
+    public static final int kg_puk_enter_puk_hint_multi = 2131821462;
+    public static final int kg_sim_lock_esim_instructions = 2131821464;
+    public static final int kg_sim_pin_instructions = 2131821465;
+    public static final int kg_sim_pin_instructions_multi = 2131821466;
+    public static final int kg_sim_unlock_progress_dialog_message = 2131821467;
+    public static final int kg_slot_name = 2131821468;
+    public static final int kg_wrong_password = 2131821472;
+    public static final int kg_wrong_pin = 2131821476;
+    public static final int kg_wrong_pin_warning = 2131821477;
+    public static final int kg_wrong_pin_warning_one = 2131821478;
+
+    /* renamed from: ok */
+    public static final int f53ok = 2131821686;
+    public static final int op_kg_prompt_reason_face_timeout_bouncer_password = 2131821737;
+    public static final int op_kg_prompt_reason_face_timeout_bouncer_pattern = 2131821738;
+    public static final int op_kg_prompt_reason_face_timeout_bouncer_pin = 2131821739;
+    public static final int op_kg_prompt_reason_face_timeout_password = 2131821740;
+    public static final int op_kg_prompt_reason_face_timeout_pattern = 2131821741;
+    public static final int op_kg_prompt_reason_face_timeout_pin = 2131821742;
+    public static final int op_kg_prompt_reason_face_timeout_swipe = 2131821743;
+    public static final int op_kg_prompt_reason_timeout_swipe = 2131821747;
+    public static final int sim_status_uss_network_roam = 2131822136;
+}

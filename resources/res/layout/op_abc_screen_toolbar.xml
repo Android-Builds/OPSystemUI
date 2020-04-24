@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oneplus.lib.app.appcompat.ActionBarOverlayLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/decor_content_parent" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/op_abc_screen_content_include"/>
+    <com.oneplus.lib.app.appcompat.ActionBarContainer android:gravity="top" android:id="@+id/action_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:touchscreenBlocksFocus="true" style="?attr/actionBarStyle">
+        <com.oneplus.lib.widget.actionbar.Toolbar android:id="@+id/action_bar" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/toolbarStyle"/>
+        <com.oneplus.lib.app.appcompat.ActionBarContextView android:theme="?attr/actionBarTheme" android:id="@+id/action_context_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/actionModeStyle"/>
+    </com.oneplus.lib.app.appcompat.ActionBarContainer>
+</com.oneplus.lib.app.appcompat.ActionBarOverlayLayout>

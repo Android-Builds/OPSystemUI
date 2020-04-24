@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <shape android:shape="rectangle">
+        <corners android:radius="@dimen/oneplus_contorl_radius_r4"/>
+        <solid android:color="@android:color/white"/>
+        <padding android:left="@dimen/oneplus_contorl_padding_space2" android:top="@dimen/oneplus_contorl_padding_space1" android:right="@dimen/oneplus_contorl_padding_space2" android:bottom="@dimen/oneplus_contorl_padding_space1"/>
+    </shape>
+</inset>

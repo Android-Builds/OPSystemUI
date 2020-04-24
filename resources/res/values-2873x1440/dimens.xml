@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="design_bottom_navigation_text_margin_top">40dp</dimen>
+    <dimen name="oneplus_contorl_avatar_mini">37dp</dimen>
+    <dimen name="oneplus_contorl_avatar_standard">47dp</dimen>
+    <dimen name="oneplus_contorl_fab_size_mini">45dp</dimen>
+    <dimen name="oneplus_contorl_fab_size_scrolling">26dp</dimen>
+    <dimen name="oneplus_contorl_fab_size_standard">62dp</dimen>
+    <dimen name="oneplus_contorl_icon_size_button">23dp</dimen>
+    <dimen name="oneplus_contorl_icon_size_display1">35dp</dimen>
+    <dimen name="oneplus_contorl_icon_size_display2">47dp</dimen>
+    <dimen name="oneplus_contorl_icon_size_display3">70dp</dimen>
+    <dimen name="oneplus_contorl_icon_size_display4">93dp</dimen>
+    <dimen name="oneplus_contorl_icon_size_display5">116dp</dimen>
+    <dimen name="oneplus_contorl_icon_size_indicator">17dp</dimen>
+    <dimen name="oneplus_contorl_icon_size_list">23dp</dimen>
+    <dimen name="oneplus_contorl_text_size_body1">13sp</dimen>
+    <dimen name="oneplus_contorl_text_size_body2">13sp</dimen>
+    <dimen name="oneplus_contorl_text_size_button">13sp</dimen>
+    <dimen name="oneplus_contorl_text_size_descriptions">11sp</dimen>
+    <dimen name="oneplus_contorl_text_size_display1">31sp</dimen>
+    <dimen name="oneplus_contorl_text_size_display2">37sp</dimen>
+    <dimen name="oneplus_contorl_text_size_display3">56sp</dimen>
+    <dimen name="oneplus_contorl_text_size_display4">74sp</dimen>
+    <dimen name="oneplus_contorl_text_size_extended">17sp</dimen>
+    <dimen name="oneplus_contorl_text_size_headline">31sp</dimen>
+    <dimen name="oneplus_contorl_text_size_highlight">25sp</dimen>
+    <dimen name="oneplus_contorl_text_size_subtitle">12sp</dimen>
+    <dimen name="op_control_empty_image_height">800px</dimen>
+    <dimen name="op_control_empty_image_margin_top">470px</dimen>
+    <dimen name="op_control_empty_image_width">1440px</dimen>
+    <dimen name="op_control_empty_temp_height">968px</dimen>
+</resources>

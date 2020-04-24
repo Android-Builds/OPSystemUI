@@ -1,0 +1,47 @@
+package com.oneplus.commonctrl;
+
+public final class R$attr {
+    public static final int OPAlertDialogStyle = 2130968576;
+    public static final int OPEditTextStyle = 2130968577;
+    public static final int OPFloatingActionButtonStyle = 2130968578;
+    public static final int OPImageCheckboxStyle = 2130968579;
+    public static final int OPListViewStyle = 2130968580;
+    public static final int OPRectangleFloatingActionButtonStyle = 2130968582;
+    public static final int OPSeekBarStyle = 2130968583;
+    public static final int OPSwitchFloatingActionButtonStyle = 2130968584;
+    public static final int OPTabLayoutStyle = 2130968585;
+    public static final int actionBarStyle = 2130968592;
+    public static final int alpha = 2130968636;
+    public static final int bottomNavigationStyle = 2130968671;
+    public static final int colorAccent = 2130968722;
+    public static final int colorButtonNormal = 2130968724;
+    public static final int colorControlActivated = 2130968725;
+    public static final int colorControlHighlight = 2130968726;
+    public static final int colorControlNormal = 2130968727;
+    public static final int colorPrimary = 2130968729;
+    public static final int colorSecondary = 2130968731;
+    public static final int hintSearchViewStyle = 2130968936;
+    public static final int numberPickerStyle = 2130969136;
+    public static final int onePlusActionbarLineColor = 2130969154;
+    public static final int opPickerColorActivated = 2130969213;
+    public static final int opPickerColorUnActivated = 2130969214;
+    public static final int opPickerInputLabelUnActivated = 2130969215;
+    public static final int op_checkBoxPreferenceStyle = 2130969235;
+    public static final int op_dialogPreferenceStyle = 2130969237;
+    public static final int op_dividerSwitchPreferenceStyle = 2130969239;
+    public static final int op_editTextPreferenceStyle = 2130969241;
+    public static final int op_emptyPageStyle = 2130969243;
+    public static final int op_preferenceCategoryStyle = 2130969263;
+    public static final int op_preferenceScreenStyle = 2130969269;
+    public static final int op_preferenceStyle = 2130969270;
+    public static final int op_radioButtonPreferenceStyle = 2130969272;
+    public static final int op_ringtonePreferenceStyle = 2130969274;
+    public static final int op_seekBarPreferenceStyle = 2130969276;
+    public static final int op_state_collapsed = 2130969280;
+    public static final int op_state_collapsible = 2130969281;
+    public static final int op_switchPreferenceStyle = 2130969282;
+    public static final int searchViewStyle = 2130969406;
+    public static final int state_indeterminate = 2130969452;
+    public static final int timePickerStyle = 2130969506;
+    public static final int toolbarStyle = 2130969524;
+}
